@@ -1,0 +1,4 @@
+Tipo abstrato de dados: São aqueles que 
+Classes:
+Objeto:
+Mensagens:
