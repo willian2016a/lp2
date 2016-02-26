@@ -1,4 +1,7 @@
-Tipo abstrato de dados: São aqueles que 
-Classes:
-Objeto:
+Tipo abstrato de dados: Nada mais é do que uma especificação que define atributos e métododos básicos que um dado pode executar,no caso de uma classe o que um objeto da mesma pode fazer e suas características.
+
+Classe: É uma espécie de conjunto no qual todos os objetos que pertencem a um mesmo conjunto possuem os mesmos atributos.
+
+Objeto: Elemento pertencente a uma classe que poderá ter atributos e métodos.
+
 Mensagens:
