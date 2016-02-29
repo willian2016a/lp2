@@ -1,0 +1,16 @@
+public class Exercicio1_3{
+  public void calcula(){
+    int a = 45;
+    int b = 20;
+    int c = 3;
+    int x = 0;
+    x = a+b+c;
+    System.out.println("Valor da soma : " + x);
+    x = a*b*c;
+    System.out.println("Valor da multiplicação : " + x);
+    x = a-b-c;
+    System.out.println("Valor da subtração : " + x);
+    x = a/b/c;
+    System.out.println("Valor da divisão : " + x);
+  }
+}
