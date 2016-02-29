@@ -1,9 +1,7 @@
-import java.util.Scanner;
+
 public class Exercicio1_1{
     public void imprimirNome(){
-      String CICLANO;
-      Scanner CICLANO = new Scanner( System.in );
-      System.out.println("Meu nome eh" + CICLANO);
+      System.out.println("Meu nome eh Willian");
     }
    
 }
