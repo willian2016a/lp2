@@ -1,0 +1,1 @@
+A diferença está na saida de cada programa sendo que no Exercicio1_3 as saídas serão todas do tipo inteiro , já nas outras haverá casas decimais e também há uma diferença entre ambas que é o número de casas significativas que elas suportam sendo que , float suporta até 8 casas após a virgula e double suporta 32 "casas" após a virgula.
