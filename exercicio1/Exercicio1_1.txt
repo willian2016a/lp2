@@ -1,0 +1,7 @@
+public class a Exercicio1_1{
+    public void imprimirNome(){
+      System.out.println("Meu nome eh Willian");
+    }
+   
+}
+
