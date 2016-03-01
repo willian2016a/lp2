@@ -1,5 +1,5 @@
 public class Exercicio1_5{
-  public void calcula(){
+  public static void main(String [] args){
     double a = 45;
     double b = 20;
     double c = 3;
