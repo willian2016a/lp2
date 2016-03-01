@@ -1,8 +1,8 @@
-import java.util.Scanner;
+
 public class Exercicio1_2{
-  public void imprimirArgumento(){
-    Scanner input = new Scanner( System.in );
-    String argumento = input.next();
-    System.out.println("Qual o seu nome:" + argumento);
+ public static void main(String[] args){
+    String argumento = args[0];
+    System.out.println("Qual o seu nome: " + argumento);
   }
 }
+
