@@ -1,0 +1,1 @@
+A palavra NEW implica em um requisição e de fato o alocamento de um espaço de memória para que possamos no local reservado colocar o ou os valores que nossas "variáveis", ou estruturas que possuam dados.
