@@ -1,22 +1,29 @@
 public class Palindrome{
-   string palavra="xyzararaerjkj";
-   char aux; 
-   int x=0,y=1;
+   String palavra="xyzararaerjxj";
+   String aux; 
+   int x=0,y=1,z,w,l,k,h;;
+   String res,aux7;
   public void funcao(){
       for(int i=0;i<palavra.length();i++){
         aux=palavra.substring(x,y);
-         for(int j = palavra.length();j=0;j++){
-             char [] aux2 = palavra.toCharArray();
-             int aux5;
-              aux5 = aux.compareTo(aux[j])
-             if(aux5 == 0){
-                palavra=palavra.indexOf(aux);
-                aux3=palavra.lastIndexOf(aux[j]);
-               StringBuffer aux4 = new StringBuffer(aux);
+         for(int j=palavra.length();j==0;j--){
+             System.out.print("dfre");
+             h=j;
+             k=palavra.indexOf(h);
+             l=palavra.lastIndexOf(h+1);
+             aux7 = palavra.substring(k,l);
+             boolean aux5 = false;
+              aux5 = aux.contentEquals(aux7);
+             if(aux5 == true){
+                String aux3;
+                z=palavra.indexOf(aux);
+                w=palavra.lastIndexOf(aux7);
+                res = palavra.substring(z,w);
+               StringBuffer aux4 = new StringBuffer(res);
                aux4.reverse();
-                 if(aux3 == aux4){
+               String rev = aux4.toString();
+                 if(res.equals(rev)){
                     System.out.println("PALINDROME !!");
-                    break;
                  }
              } 
          } 
