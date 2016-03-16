@@ -1,44 +1,45 @@
-import java.lang.String;
 public class Palindrome{
-   String palavra="xyzararaerjxj";
-   String aux; 
+public void funcao(String parametro){   
+   String palavra;
+   palavra = parametro;
+   String aux,rev; 
    int x=0;
-	int y=1;
-   int z,w,l,k,h;
-   String res,aux7;
-	
-  public void funcao(){
-      //Laço onde o i irá se fixar
+   int y=1;
+   int z,w,l=0,k=0,h;
+   boolean p = false;
+   String res,aux7,wil;
+   wil =  " " + palavra + " ";	
       for(int i=0;i<palavra.length();i++){
-     //pegando a primeira letra da palavra
         aux=palavra.substring(x,y);
-      //Laço que irá variar o j 
-         for(int j=palavra.length();j>=0;j--){
-      //pegando a última letra da string
-             h=j;
-             k=palavra.indexOf(h-1);
-             l=palavra.lastIndexOf(h);
-             aux7 = palavra.substring(k,l);
-             boolean aux5 = false;
-              aux5 = aux.contentEquals(aux7);
+         for(int j=palavra.length() + 1;j>=2;j--){
+      	     if(j > i + 2){
+		 h=j;
+	         aux7 = wil.substring(h-1,h);
+                 boolean aux5 = false;
+                 aux5 = aux.equals(aux7);
              if(aux5 == true){
-                z=palavra.indexOf(aux);
-                w=palavra.lastIndexOf(aux7);
-                res = palavra.substring(z,w);
+                res = wil.substring(i+1,j);
                StringBuffer aux4 = new StringBuffer(res);
                aux4.reverse();
-               String rev = aux4.toString();
-                 if(res.equals(rev)){
+               rev = aux4.toString();
+                 if(res.equals(rev) && res.length() == 5){
                     System.out.println("PALINDROME: "+ res);
+		    System.out.println("Posicao: " + (i) + "-" + (j - 2));
+		    p = true;
                  }
              } 
+	}		
          } 
            x++;
            y++;
        }
+	if(p == false){
+	    System.out.println("Palindrome de tamanho 5 nao encontrado.");
+	}
     }
    public static void main(String [] args){
-        Palindrome p = new Palindrome();
-        p.funcao(); 
+        String parametro = args[0];
+	Palindrome p = new Palindrome();
+        p.funcao(parametro); 
    }
 }
