@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface SerieRepository  extends MongoRepository<Cliente, String> {
+public interface SerieRepository  extends MongoRepository<Usuario, String> {
 
 	List<Usuario>findByNomeSerie(String nomeSerie);
 	List<Usuario>findByGeneroSerie(String generoSerie );
