@@ -1,7 +1,9 @@
 package br.com.herbertrausch.spring.mongo;
 
 import java.io.Serializable;
+import java.util.List;
 
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
@@ -13,6 +15,9 @@ public class Usuario implements Serializable {
 	private String nickname;
 	private String email;
 	private String senha;
+	
+	@DBRef
+	private List<Serie> series;
 
 	public String getSenha() {
 		return senha;
