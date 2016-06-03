@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UsuarioRepository  extends MongoRepository<Cliente, String> {
+public interface UsuarioRepository  extends MongoRepository<Usuario, String> {
 
 	List<Usuario>findByNome(String nome);
 	List<Usuario>findByNickname(String nickname);
