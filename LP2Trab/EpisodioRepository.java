@@ -6,9 +6,9 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface EpisodioRepository  extends MongoRepository<Usuario, String> {
+public interface EpisodioRepository  extends MongoRepository<Episodio, String> {
 
-	List<Usuario>findByNomeEpisodio(String nomeEpisodio);
-	List<Usuario>findByIdTemporada(int idTemporada);
+	List<Episodio>findByNomeEpisodio(String nomeEpisodio);
+	List<Episodio>findByIdTemporada(int idTemporada);
 
 }
