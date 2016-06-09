@@ -6,9 +6,10 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface SerieRepository  extends MongoRepository<Usuario, String> {
+public interface SerieRepository  extends MongoRepository<Serie, String> {
 
-	List<Usuario>findByNomeSerie(String nomeSerie);
-	List<Usuario>findByGeneroSerie(String generoSerie );
+	List<Serie>findByNomeSerie(String nomeSerie);
+	List<Serie>findByGeneroSerie(String generoSerie );
+	void deleteByNomeSerie(String nomeSerie);
 
 }
