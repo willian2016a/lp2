@@ -28,6 +28,7 @@ public class EpisodioResource {
 		
 	}
 	
+		
 	@GET
 	@Path("/Episodio/{nomeEpisodio}")
 	public List<Episodio> getByNomeEpisodio(@PathParam("Nome") String nomeEpisodio) {
@@ -37,9 +38,10 @@ public class EpisodioResource {
 	
 	
 	@POST
-	public void save(Episodio e){
+	public Episodio save(Episodio e){
 		
 		service.insert(e);
+		return e;
 		
 	}
     
