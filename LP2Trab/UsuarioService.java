@@ -8,6 +8,7 @@ import br.com.herbertrausch.util.SpringUtil;
 
 public class UsuarioService {
 
+	private static final String String = null;
 	private UsuarioRepository db;
 
 	
@@ -26,6 +27,11 @@ public class UsuarioService {
 	public void insert(Usuario e) {
 		db.save(e);
 		
+	}
+
+	public List<Usuario> getByNickname(String nickname) {
+		// TODO Auto-generated method stub
+		return db.findByNickname(nickname);
 	}
 	
 
