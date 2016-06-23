@@ -1,0 +1,4 @@
+Tipo Abstrato de Dados: são aqueles os quais já são especificados de a qual domínio(tipo) eles pertecem e as operações que podem ser realizadas com eles.
+Classe:é uma espécie de conjunto o qual contem objetos similares. A classe definirá quais métodos os objetos podem executar.
+Objeto: pode ser entendido como elemento alocado em memória que é pertecente a alguma classe e por isso possue atributos e métodos, sendo que ambos dependerão da classe.
+Mensagens: são dados ou informações que são transmitidas tendo sempre um alvo e pode ou não esperar algum tipo de retorno efetivo.
