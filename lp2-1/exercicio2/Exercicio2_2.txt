@@ -1,0 +1,2 @@
+O new é um construtor. Ou seja, ele tem o propósito de instanciar um objeto (Dar vida a classe).
+Quando ele é utilizado, o construtor da classe da instância é chamado.

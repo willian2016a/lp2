@@ -1,0 +1,24 @@
+Comparação de Resultados:
+
+Float:
+
+Soma: 68,0
+Subtração: 22,0
+Multiplicação: 2700,0
+Divisão: 0,75
+
+Double:
+
+Soma: 68,0
+Subtração: 22,0
+Multiplicação: 2700,0
+Divisão: 0,75
+
+Int:
+
+Soma: 68
+Subtração: 22
+Multiplicação: 2700
+Divisão: 0
+
+Observação: A divisão do exercício1_3 é zero, pois o tipo inteiro não aceita números com vírgula (números decimais). 
